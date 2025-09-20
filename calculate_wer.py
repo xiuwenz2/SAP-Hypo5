@@ -20,8 +20,6 @@ def compute_csid_wer(pred_path: str):
     """
     with open(pred_path, "r", encoding="utf-8") as f:
         data = json.load(f)
-    if data:  # keep original behavior
-        data = data[:-1]
 
     data = post_processing(data)
 
