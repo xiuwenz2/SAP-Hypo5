@@ -28,9 +28,6 @@ def _load_items(pred_path: str) -> List[Dict[str, Any]]:
 
     records = [r for r in items if all(k in r for k in ("after", "answer"))]
 
-    # Keep original behavior: if non-empty, drop the last item
-    if records:
-        records = records[:-1]
     return records
 
 
