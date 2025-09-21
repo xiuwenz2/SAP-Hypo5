@@ -1,5 +1,8 @@
 # SAP-Hypo5
 
+### Fine-tuning
+We release our fine-tuned meta-llama/Llama-3.1-8B on the SAP-Hypo5 dataset ([model](https://huggingface.co/xiuwenz2/Llama-3.1-8B-ft-SAP-Hypo5)) following [Hypo2Trans](https://github.com/Hypotheses-Paradise/Hypo2Trans).
+
 ### Evaluation
 Evaluate LLM-corrected ASR transcripts from a single JSON/JSONL file.
 
