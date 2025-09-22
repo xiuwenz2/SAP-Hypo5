@@ -9,6 +9,7 @@ python inference.py \
       --test_data_path <path/to/test.json> \
       --out_dir <dir/to/output>
 ```
+For prompter and prompt templates, please check the original repo.
 
 ### Evaluation
 Evaluate LLM-corrected ASR transcripts from a single JSON/JSONL file.
