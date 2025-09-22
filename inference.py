@@ -46,17 +46,14 @@ def calculate_wer(pre, ref):
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--dataset", type=str, default="sap")
-    parser.add_argument("--model", type=str, default="xiuwenz2/Llama-3.1-8B-ft-SAP-Hypo5")
-    parser.add_argument("--split", type=str, default="test")
     parser.add_argument("--base_model", type=str, default="meta-llama/Llama-3.1-8B")
     parser.add_argument("--num_test_pairs", type=int, default=1000000)
     parser.add_argument("--repetition_penalty", type=float, default=1.0)
     parser.add_argument("--clean_text", action="store_false", help="Enable optional text cleaning for pred/gt/best_hypo")
 
-    parser.add_argument("--ckpt_path", type=str, default=None, help="Path to LoRA adapter checkpoint directory.")
-    parser.add_argument("--test_data_path", type=str, default=None, help="Path to test JSON file.")
-    parser.add_argument("--out_dir", type=str, default=None, help="Output directory for results.")
+    parser.add_argument("--ckpt_path", type=str, default="xiuwenz2/Llama-3.1-8B-ft-SAP-Hypo5", help="Path to LoRA adapter checkpoint directory.")
+    parser.add_argument("--test_data_path", type=str, required=True, help="Path to test JSON file.")
+    parser.add_argument("--out_dir", type=str, required=True, help="Output directory for results.")
 
     args = parser.parse_args()
     prompter = Prompter("H2T-LoRA")
