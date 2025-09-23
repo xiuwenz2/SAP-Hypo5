@@ -1,5 +1,7 @@
 # SAP-Hypo5
 
+This repository provides a comprehensive pipeline for fine-tuning and multi-dimensional evaluation of large language models in ASR hypothesis correction for dysarthric speech recognition. Please find the SAP-Hypo5 dataset [here](https://huggingface.co/datasets/xiuwenz2/SAP-Hypo5).
+
 ### Fine-tuning
 We release our fine-tuned meta-llama/Llama-3.1-8B on the SAP-Hypo5 dataset ([model](https://huggingface.co/xiuwenz2/Llama-3.1-8B-ft-SAP-Hypo5)) following [Hypo2Trans](https://github.com/Hypotheses-Paradise/Hypo2Trans). Set ```train_on_inputs=False``` for faster convergence and better performance.
 
