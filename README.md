@@ -6,7 +6,6 @@ This repository provides a comprehensive pipeline for fine-tuning and multi-dime
 We release our fine-tuned meta-llama/Llama-3.1-8B on the SAP-Hypo5 dataset ([model](https://huggingface.co/xiuwenz2/Llama-3.1-8B-ft-SAP-Hypo5)) following [Hypo2Trans](https://github.com/Hypotheses-Paradise/Hypo2Trans). Set ```train_on_inputs=False``` for faster convergence and better performance.
 
 ### Inference
-#### Usage
 ```
 python inference.py \
       --test_data_path <path/to/test.json> \
@@ -17,7 +16,6 @@ For prompter and prompt templates, please check the original repo.
 ### Evaluation
 Evaluate LLM-corrected ASR transcripts from a single JSON/JSONL file.
 
-#### Usage
 ```bash
 bash scripts/evaluate.sh <path/to/json>
 ```
